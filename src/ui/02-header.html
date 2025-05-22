@@ -10,9 +10,58 @@
     <link rel="stylesheet" href="/font/suit/SUIT-Variable.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="hidden">
-    <a href="/index.html">메인 페이지 이동</a>
-    <br />
-    <h1>크림 헤더</h1>
+  <body>
+    <div class="sr-only">
+      <a href="/index.html">메인 페이지 이동</a>
+      <br />
+      <h1 class="text-3xl">크림 헤더</h1>
+    </div>
+
+    <hr />
+
+    <!-- 모바일 헤더 -->
+    <div class="md:hidden">
+      <header class="flex justify-between items-center border-b-2 p-3.5">
+        <p>KREAM</p>
+        <div>
+          <button type="button" aria-label="알림">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_4019_590)">
+                <path d="M12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.9 22 12 22ZM18 16V11C18 7.93 16.37 5.36 13.5 4.68V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V4.68C7.64 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16ZM16 17H8V11C8 8.52 9.51 6.5 12 6.5C14.49 6.5 16 8.52 16 11V17Z" fill="black" />
+              </g>
+              <defs>
+                <clipPath>
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button type="button" aria-label="메뉴 열기">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2039_1308)">
+                <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="currentColor"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_2039_1308">
+                  <rect width="24" height="24" fill="none"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <nav class="bg-amber-200 p-4 relative flex w-60 h-screen justify-center">
+        <ul class="text-center space-y-2 absolute justify-self-center">
+          <li><a href="/">고객센터</a></li>
+          <li><a href="/">마이페이지</a></li>
+          <li><a href="/">관심</a></li>
+          <li><a href="/">알림</a></li>
+          <li><a href="/">로그인</a></li>
+        </ul>
+        <button type="button" class="" aria-label="메뉴 닫기">
+          <span aria-hidden="true" class="absolute right-1.5 top-1">×</span>
+        </button>
+      </nav>
+    </div>
   </body>
 </html>
