@@ -9,9 +9,15 @@
 } */
 
 @theme {
+  --building: url(../src/assets/images/building.avif);
+  --pretendard: 'Pretendard Variable', Pretendard, sans-serif;
   --color-like: lightgreen;
   --color-lion: red;
-  --building: url(../src/assets/images/building.avif);
+  --color-likelion-black: #303033;
+  --color-likelion-red: #b02c20;
+  --color-likelion-green: #58dc76;
+
+  --autofit: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 @layer components {
